@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Subtle Edge Rim Highlight -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.01"/>
+    </linearGradient>
+
+    <!-- Modern Titanium White Chevron -->
+    <linearGradient id="chevronGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E4E7EC"/>
+    </linearGradient>
+
+    <!-- Precision Signal Amber Wave Gradient -->
+    <linearGradient id="amberWaveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- macOS Squircle Drop Shadow -->
+    <filter id="squircleShadow" filterUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+
+    <!-- Clean Glyph Elevation Shadow -->
+    <filter id="glyphShadow" filterUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- macOS Squircle Container -->
+  <g filter="url(#squircleShadow)">
+    <rect x="100" y="100" width="824" height="824" rx="190" fill="#0C0D0E" stroke="url(#borderGrad)" stroke-width="2"/>
+  </g>
+
+  <!-- Radar Glyph Group (Concentric, Balanced, Instrument Aesthetic) -->
+  <g filter="url(#glyphShadow)">
+    <!-- Radar Chevron V -->
+    <path d="M 272 438 L 512 756 L 752 438" 
+          fill="none" 
+          stroke="url(#chevronGrad)" 
+          stroke-width="48" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+
+    <!-- Outer Wave Arc -->
+    <path d="M 308.2 338.9 A 270 270 0 0 1 715.8 338.9" 
+          fill="none" 
+          stroke="url(#amberWaveGrad)" 
+          stroke-width="36" 
+          stroke-linecap="round"/>
+
+    <!-- Inner Wave Arc -->
+    <path d="M 402.2 402.3 A 158 158 0 0 1 621.8 402.3" 
+          fill="none" 
+          stroke="url(#amberWaveGrad)" 
+          stroke-width="36" 
+          stroke-linecap="round"/>
+
+    <!-- Central Beacon Pulse Dot -->
+    <circle cx="512" cy="516" r="40" fill="#F59E0B"/>
+  </g>
+</svg>
