@@ -98,4 +98,4 @@ Open `http://localhost:8000` in your browser.
 ## License & Credits
 
 - © 2026 **Juan Manuel Vallejo**. All rights reserved.
-- For legal inquiries or support, contact [jmvallejo@gmail.com](mailto:jmvallejo@gmail.com) or submit a ticket on our [Issue Tracker](https://github.com/jmvallejo/vigilo-app/issues).
+- For inquiries or support, submit a ticket on our [Issue Tracker](https://github.com/jmvallejo/vigilo-app/issues).
